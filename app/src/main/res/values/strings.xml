@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TeamForest</string>
+    <string name="title_home">Home</string>
+    <string name="title_games">Giochi</string>
+    <string name="title_video">Video</string>
+    <string name="title_share">Condividi</string>
+    <string name="title_donation">Donazione</string>
+    <string name="profile">Profilo</string>
+</resources>
