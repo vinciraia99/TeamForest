@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TeamForest">
-        <activity android:name=".ui.donation.DonationFragmentMoneyTwo"></activity>
-        <activity android:name=".ui.donation.DonationFragmentMoney" />
-        <activity android:name=".ui.donation.DonationFragmentPoint" />
+        <activity android:name=".ui.donation.DonationMoneyTwo"></activity>
+        <activity android:name=".ui.donation.DonationMoney" />
+        <activity android:name=".ui.donation.DonationPoint" />
         <activity
             android:name=".MainActivity"
             android:icon="@drawable/homepage_logo"

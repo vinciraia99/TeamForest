@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.unisa.teamforest.R;
 
-public class DonationFragmentMoneyTwo extends AppCompatActivity {
+public class DonationMoneyTwo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_donation_fragment_money_two);
+        setContentView(R.layout.activity_donation_money_two);
     }
 }

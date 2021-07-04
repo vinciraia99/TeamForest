@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.donation.DonationFragmentMoney"
+    tools:context=".ui.donation.DonationPoint"
     android:orientation="vertical">
 
     <LinearLayout
@@ -44,43 +44,18 @@
             android:layout_height="50dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Quanl è la somma che vuoi donare?"
-            android:textSize="20dp"
+            android:text="Quanti punti vuoi donare?"
+            android:textSize="30dp"
             android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <EditText
-                android:layout_width="100dp"
-                android:layout_marginTop="10dp"
-                android:layout_height="60dp"
-                android:gravity="center"
-                android:inputType="numberDecimal"
-                android:text="5"
-                android:textSize="35dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_height="60dp"
-                android:gravity="center"
-                android:inputType="numberDecimal"
-                android:text=","
-                android:textSize="35dp"/>
-
-            <EditText
-                android:layout_width="100dp"
-                android:layout_marginTop="10dp"
-                android:layout_height="60dp"
-                android:gravity="center"
-                android:inputType="numberDecimal"
-                android:text="00"
-                android:textSize="35dp"/>
-
-        </LinearLayout>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:text="5,00"
+            android:textSize="35dp"/>
 
         <SeekBar
             android:layout_width="match_parent"
@@ -108,7 +83,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Procedi al pagamento"
+            android:text="CONFERMA"
             android:layout_marginHorizontal="15dp"
             android:layout_marginTop="10dp"
             android:textSize="20dp"/>

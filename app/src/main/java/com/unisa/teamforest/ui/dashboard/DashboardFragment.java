@@ -15,30 +15,12 @@ import com.unisa.teamforest.databinding.FragmentDashboardBinding;
 
 public class DashboardFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
-private FragmentDashboardBinding binding;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
-            ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
+                             ViewGroup container, Bundle savedInstanceState) {
 
-    binding = FragmentDashboardBinding.inflate(inflater, container, false);
-    View root = binding.getRoot();
+        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
 
-        final TextView textView = binding.textDashboard;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return root;
-    }
 
-@Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
     }
 }
