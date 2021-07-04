@@ -12,35 +12,18 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.unisa.teamforest.R;
 import com.unisa.teamforest.databinding.FragmentDashboardBinding;
 import com.unisa.teamforest.databinding.FragmentGamesBinding;
 
 public class GamesFragment extends Fragment {
 
-    private GamesViewModel dashboardViewModel;
-private FragmentGamesBinding binding;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
-            ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                new ViewModelProvider(this).get(GamesViewModel.class);
+                             ViewGroup container, Bundle savedInstanceState) {
 
-    binding = FragmentGamesBinding.inflate(inflater, container, false);
-    View root = binding.getRoot();
+        View root = inflater.inflate(R.layout.fragment_games, container, false);
 
-        final TextView textView = binding.textGiochi;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return root;
-    }
 
-@Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
     }
 }
