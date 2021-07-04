@@ -7,12 +7,21 @@
     tools:context=".ui.donation.DonationMoneyTwo"
     android:orientation="vertical">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="60dp">
+        android:layout_marginTop="50dp">
 
         <ImageView
             android:id="@+id/imgdollardonation"
@@ -186,6 +195,11 @@
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="50dp"
         android:text="Conferma"
+        android:id="@+id/btnConfirmPaymentMoney"
         android:textSize="20dp" />
+
+    </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
