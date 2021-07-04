@@ -25,7 +25,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="10dp"/>
 
-    <GridView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/gridViewGames"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
