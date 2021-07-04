@@ -1,4 +1,4 @@
-package com.unisa.teamforest.ui.profile.dashboard;
+package com.unisa.teamforest.ui.profile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
