@@ -88,7 +88,8 @@
                         android:layout_weight="1"
                         android:text="Punti"
                         android:layout_marginHorizontal="15dp"
-                        android:textSize="15dp"/>
+                        android:textSize="15dp"
+                        android:id="@+id/btnPointDonation"/>
 
                     <Button
                         android:layout_width="wrap_content"
@@ -96,7 +97,8 @@
                         android:layout_weight="1"
                         android:layout_marginHorizontal="15dp"
                         android:text="Soldi"
-                        android:textSize="15dp"/>
+                        android:textSize="15dp"
+                        android:id="@+id/btnMoneyDonation"/>
 
                 </LinearLayout>
 
