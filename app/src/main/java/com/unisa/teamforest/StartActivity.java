@@ -1,6 +1,8 @@
 package com.unisa.teamforest;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +22,13 @@ public class StartActivity extends AppCompatActivity {
         getSupportActionBar().setLogo(R.drawable.homepage_logo);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setTitle("");
+        setContentView(R.layout.startactivity);
         super.onCreate(savedInstanceState);
     }
 
+    public void login(View view)
+    {
+        Intent activity = new Intent(this, LoginActivity.class);
+        startActivity(activity);
+    }
 }

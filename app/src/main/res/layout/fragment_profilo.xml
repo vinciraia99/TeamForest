@@ -34,6 +34,7 @@
                 android:gravity="center"
                 android:text="Nome:"
                 android:textColor="@color/black"
+                android:id="@+id/dato_nome"
                 android:textSize="17dp" />
 
             <TextView
@@ -43,6 +44,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="3dp"
                 android:gravity="center"
+                android:id="@+id/dato_punti"
                 android:text="Punti:"
                 android:textColor="@color/black"
                 android:textSize="17dp" />
@@ -55,17 +57,27 @@
                 android:layout_marginTop="3dp"
                 android:gravity="center"
                 android:textColor="@color/black"
+                android:id="@+id/dato_alberi"
                 android:text="Alberi piantati:"
                 android:textSize="17dp" />
 
-            <Button
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="6dp"
-                android:clickable="false"
-                android:text="Dati utente"
-                android:textSize="15dp" />
+                android:layout_below="@id/textAlberi"
+                android:background="@color/green_200"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Dati Utente"
+                    android:orientation="vertical"
+                    android:textSize="25dp"
+                    >
+
+                </TextView>
+            </RelativeLayout>
 
             <TextView
                 android:layout_width="match_parent"
@@ -89,20 +101,30 @@
                 android:id="@+id/dato_email"
                 android:textSize="20dp" />
 
-            <Button
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="10dp"
-                android:clickable="false"
-                android:text="Giochi disponibili"
-                android:textSize="15dp" />
+                android:layout_below="@id/textAlberi"
+                android:background="@color/green_200"
+                android:layout_marginTop="15px"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Impostazioni"
+                    android:orientation="vertical"
+                    android:textSize="25dp"
+                    >
+
+                </TextView>
+            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <Button
                     android:layout_width="wrap_content"
@@ -128,7 +150,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <Button
                     android:layout_width="wrap_content"

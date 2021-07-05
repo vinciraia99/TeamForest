@@ -20,14 +20,24 @@
         android:text="Questa sezione contiene dei video che potrai visualizzare per ottenere punti da donare, ogni video vale 1 punto. Clicca sull'immagine per aprire il video."
         android:textSize="17dp" />
 
-    <Button
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="6dp"
-        android:clickable="false"
-        android:text="Video"
-        android:textSize="15dp" />
+        android:layout_below="@id/textAlberi"
+        android:background="@color/green_200"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Video"
+            android:orientation="vertical"
+            android:textSize="25dp"
+            >
+
+        </TextView>
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"

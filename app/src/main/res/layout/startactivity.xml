@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/backgroudapp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Benvenuto/a"
+        android:textSize="40dp"
+        android:id="@+id/testoinziale"
+        android:paddingBottom="120px"
+        android:paddingTop="180dp"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/testoinziale"
+        android:id="@+id/testologin"
+        android:layout_centerHorizontal="true"
+        android:text="Non hai effettuato l'accesso?"
+        android:textSize="20dp"
+        ></TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:onClick="login"
+        android:layout_below="@id/testologin"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonlogin">
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonlogin"
+        android:id="@+id/testoregistrazione"
+        android:layout_centerHorizontal="true"
+        android:text="Non hai un account?\nRegistrati qui"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        ></TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrati"
+        android:onClick="registrati"
+        android:layout_below="@id/testoregistrazione"
+        android:layout_centerHorizontal="true">
+    </Button>
+
 
 
 
