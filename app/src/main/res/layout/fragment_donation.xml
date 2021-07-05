@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    tools:context=".ui.donation.DonationFragment" >
+    tools:context=".ui.donation.DonationFragment"
+    android:background="@color/backgroudapp">
 
     <ScrollView
         android:layout_width="match_parent"
