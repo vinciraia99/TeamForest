@@ -48,6 +48,7 @@ public class LoginActivity extends AppCompatActivity {
             mEditor.putString("username", personas1.getUsername()).commit();
             mEditor.putString("email", personas1.getEmail()).commit();
             Intent activity = new Intent(this, MainActivity.class);
+            activity.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(activity);
 
         } else if(u.equals(personas2.getUsername()) && p.equals(personas2.getPassword())){
@@ -57,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
             mEditor.putString("username", personas2.getUsername()).commit();
             mEditor.putString("email", personas2.getEmail()).commit();
             Intent activity = new Intent(this, MainActivity.class);
+            activity.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(activity);
 
         } else if(u.equals(personas3.getUsername()) && p.equals(personas3.getPassword())){
@@ -66,6 +68,7 @@ public class LoginActivity extends AppCompatActivity {
             mEditor.putString("username", personas3.getUsername()).commit();
             mEditor.putString("email", personas3.getEmail()).commit();
             Intent activity = new Intent(this, MainActivity.class);
+            activity.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(activity);
         }else{
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
