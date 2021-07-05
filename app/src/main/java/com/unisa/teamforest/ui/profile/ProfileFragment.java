@@ -24,6 +24,11 @@ public class ProfileFragment extends Fragment {
 
         return root;
 
+
+    }
+    public void onClickEsci(View w){
+        getActivity().finish();
+        System.exit(0);
     }
 
 }
