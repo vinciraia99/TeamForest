@@ -1,66 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment"
-    android:background="@color/backgroudapp">
+    android:background="@color/backgroudapp"
+    tools:context=".ui.home.HomeFragment">
 
     <ImageView
         android:id="@+id/imgProfilo"
         android:layout_width="140dp"
         android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
-        android:layout_centerHorizontal="true"
-        android:src="@mipmap/immagine_profilo"
-       />
+        android:src="@mipmap/immagine_profilo" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Benvenuto/a X"
-        android:layout_below="@id/imgProfilo"
         android:id="@+id/textNome"
-        android:layout_centerHorizontal="true">
-    </TextView>
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I tuoi punti:"
-        android:layout_below="@id/textNome"
+        android:layout_below="@id/imgProfilo"
+        android:layout_centerHorizontal="true"
+        android:text="Benvenuto/a X"></TextView>
+
+    <TextView
         android:id="@+id/textPunti"
-        android:layout_centerHorizontal="true">
-    </TextView>
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alberi piantati:"
-        android:layout_below="@id/textPunti"
+        android:layout_below="@id/textNome"
+        android:layout_centerHorizontal="true"
+        android:text="I tuoi punti:"></TextView>
+
+    <TextView
         android:id="@+id/textAlberi"
-        android:layout_centerHorizontal="true">
-    </TextView>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPunti"
+        android:layout_centerHorizontal="true"
+        android:text="Alberi piantati:"></TextView>
 
     <RelativeLayout
+        android:id="@+id/notizie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textAlberi"
-        android:background="@color/green_200"
-        >
+        android:layout_marginTop="0dp"
+        android:background="@color/green_200">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Notizie recenti"
             android:orientation="vertical"
-            android:textSize="30dp"
-            >
+            android:text="Notizie recenti"
+            android:textSize="30dp">
 
         </TextView>
     </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/notizie">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="231dp"
+                    android:src="@drawable/notizia1"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="La deforestazione aumenta il rischio di nuove pandemie"
+                    android:textSize="50px"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10px"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A circa 10 mila chilometri da noi, in silenzio, si sta consumando un dramma che presto anche in termini di future pandemie potrebbe ricadere sulle nostre vite. L'Amazzonia continua ad essere sventrata, bruciata, deforestata. "></TextView>
+
+            </LinearLayout>
+
+            <!-- Da farne altre -->
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </RelativeLayout>
