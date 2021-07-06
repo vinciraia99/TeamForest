@@ -96,6 +96,14 @@
                     android:layout_height="wrap_content"
                     android:text="A circa 10 mila chilometri da noi, in silenzio, si sta consumando un dramma che presto anche in termini di future pandemie potrebbe ricadere sulle nostre vite. L'Amazzonia continua ad essere sventrata, bruciata, deforestata. "></TextView>
 
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:drawableLeft="@drawable/ic_baseline_share_24"
+                    android:id="@+id/bt1"
+                    android:text="Condividi"></Button>
+
             </LinearLayout>
 
             <LinearLayout
@@ -124,6 +132,13 @@
                     android:layout_height="wrap_content"
                     android:text="“Quanta foresta avete mangiato oggi?”: questo il provocatorio titolo di un rapporto del WWF pubblicato nel mese di novembre 2020 che descrive ed evidenzia il forte legame tra i consumi, alimentari ma non soltanto, e il fenomeno della deforestazione. Secondo quanto riporta l’importante organizzazione ambientalista internazionale, ben l’80% della superficie forestale che abbiamo perso dipende proprio da abitudini non sostenibili."></TextView>
 
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:drawableLeft="@drawable/ic_baseline_share_24"
+                    android:id="@+id/bt2"
+                    android:text="Condividi"></Button>
             </LinearLayout>
 
             <LinearLayout
@@ -151,6 +166,13 @@
                     android:layout_height="wrap_content"
                     android:text="C’è tanta, troppa natura sacrificata in molti prodotti di largo consumo, alcuni dei quali tipicamente italiani, come il caffè: l’80% della deforestazione mondiale è dovuta alla necessità di fare posto ai pascoli per la produzione di carne, alle piantagioni di soia e olio di palma richiesti dai Paesi occidentali che consumano e sprecano sempre di più. I consumi dell’Europa sono responsabili del 10% della deforestazione globale, che avviene prevalentemente al di fuori dei confini dell’UE, e il nostro Paese ha un’alta responsabilità visto che siamo un tradizionale importatore di materie prime provenienti dalle foreste: non solo legname, ma anche carni, soia, olio di palma, caffè, cacao, cuoio, e altro ancora, tutti prodotti ad alto ‘contenuto’ di deforestazione."></TextView>
 
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:drawableLeft="@drawable/ic_baseline_share_24"
+                    android:id="@+id/bt3"
+                    android:text="Condividi"></Button>
             </LinearLayout>
 
         </LinearLayout>
