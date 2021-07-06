@@ -16,8 +16,7 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="3dp"
         android:gravity="center"
-        android:textColor="@color/black"
-        android:text="Questa sezione contiene dei video che potrai visualizzare per ottenere punti da donare, ogni video vale 1 punto. Clicca sull'immagine per aprire il video."
+        android:text="Questa sezione contiene dei video che potrai visualizzare per ottenere punti da donare. Clicca sul bottone al centro del video per iniziare la visualizzazione."
         android:textSize="17dp" />
 
 
@@ -25,16 +24,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textAlberi"
-        android:background="@color/green_200"
-        >
+        android:background="@color/green_200">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Video"
             android:orientation="vertical"
-            android:textSize="25dp"
-            >
+            android:text="Video"
+            android:textSize="25dp">
 
         </TextView>
     </RelativeLayout>
@@ -48,77 +46,100 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linear1">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginTop="3dp"
                     android:gravity="center"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
                     android:text="Basi del clima: Deforestazione.  Autore: National Geographic. Descrizione: Cosa è la deforestazione? Cause, effetti, soluzioni."
-                    android:textSize="16dp" />
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
 
-            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-                android:id="@+id/youtube_player_view1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                app:videoId="Ic-J6hcSKa8"
-                app:autoPlay="false"
-                app:showYouTubeButton="true"
-                app:showVideoCurrentTime="true"
-                app:showVideoDuration="true"
-                app:showFullScreenButton="false"
-                />
-
-
-                <TextView
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/youtube_player_view1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:text="Cosa è la deforestazione? Autore: One tree planted. Descrizione: La deforestazione è un problema ambientale enorme. Cosa la causa e come possiamo fermarla?"
-                    android:textSize="16dp" />
+                    app:autoPlay="false"
+                    app:showFullScreenButton="false"
+                    app:showVideoCurrentTime="true"
+                    app:showVideoDuration="true"
+                    app:showYouTubeButton="true"
+                    app:videoId="Ic-J6hcSKa8" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_baseline_share_24"
+                    android:id="@+id/bt1"
+                    android:text="Condividi"></Button>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Cosa è la deforestazione? Autore: One tree planted. Descrizione: La deforestazione è un problema ambientale enorme. Cosa la causa e come possiamo fermarla?"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
             <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
                 android:id="@+id/youtube_player_view2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                app:videoId="vJnnrpSDWPI"
                 app:autoPlay="false"
-                app:showYouTubeButton="true"
+                app:showFullScreenButton="false"
                 app:showVideoCurrentTime="true"
                 app:showVideoDuration="true"
-                app:showFullScreenButton="false" />
+                app:showYouTubeButton="true"
+                app:videoId="vJnnrpSDWPI" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_baseline_share_24"
+                android:id="@+id/bt2"
+                android:text="Condividi"></Button>
 
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:text="Deforestazione | Cause, effetti e soluzioni. Autore: Learning junction. Descrizione: Impariamo quali sono le cause, gli effetti e le soluzioni per la deforestazione."
-                    android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Deforestazione | Cause, effetti e soluzioni. Autore: Learning junction. Descrizione: Impariamo quali sono le cause, gli effetti e le soluzioni per la deforestazione."
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
             <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
                 android:id="@+id/youtube_player_view3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                app:videoId="-01T9e6VDWU"
                 app:autoPlay="false"
-                app:showYouTubeButton="true"
+                app:showFullScreenButton="false"
                 app:showVideoCurrentTime="true"
                 app:showVideoDuration="true"
-                app:showFullScreenButton="false" />
+                app:showYouTubeButton="true"
+                app:videoId="-01T9e6VDWU" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_baseline_share_24"
+                android:id="@+id/bt3"
+                android:text="Condividi"></Button>
 
 
         </LinearLayout>

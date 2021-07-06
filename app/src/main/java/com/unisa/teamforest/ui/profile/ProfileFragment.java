@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -45,10 +46,9 @@ public class ProfileFragment extends Fragment {
         TextView a = (TextView) root.findViewById(R.id.dato_alberi);
         a.setText("Alberi piantati: " + alberi);
         return root;
-
-
     }
-    public void onClickEsci(View w){
+
+    public void onClickEsci(View v){
         getActivity().finish();
         System.exit(0);
     }

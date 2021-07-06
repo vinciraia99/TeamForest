@@ -33,7 +33,6 @@
                 android:layout_marginTop="3dp"
                 android:gravity="center"
                 android:text="Nome:"
-                android:textColor="@color/black"
                 android:id="@+id/dato_nome"
                 android:textSize="17dp" />
 
@@ -46,7 +45,6 @@
                 android:gravity="center"
                 android:id="@+id/dato_punti"
                 android:text="Punti:"
-                android:textColor="@color/black"
                 android:textSize="17dp" />
 
             <TextView
@@ -56,7 +54,6 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="3dp"
                 android:gravity="center"
-                android:textColor="@color/black"
                 android:id="@+id/dato_alberi"
                 android:text="Alberi piantati:"
                 android:textSize="17dp" />
@@ -85,7 +82,6 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:textColor="@color/black"
                 android:text="Username:"
                 android:id="@+id/dato_username"
                 android:textSize="20dp" />
@@ -96,7 +92,6 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:textColor="@color/black"
                 android:text="E-mail:"
                 android:id="@+id/dato_email"
                 android:textSize="20dp" />
