@@ -75,7 +75,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:id="@+id/notizia1"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginBottom="90px">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -102,7 +103,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:id="@+id/notizia2"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginBottom="90px">
 
                 <ImageView
                     android:layout_width="wrap_content"

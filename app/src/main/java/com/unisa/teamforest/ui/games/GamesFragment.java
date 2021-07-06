@@ -57,7 +57,7 @@ public class GamesFragment extends Fragment {
                         mEditor.putInt(username, punti).commit();
                     }
                 });
-                builder.setMessage("Grazie per aver giocato! Sono stati aggiunti 10 punti al tuo account" + username);
+                builder.setMessage("Grazie per aver giocato! Sono stati aggiunti 10 punti al tuo account");
                 builder.show();
             }
         });
@@ -86,7 +86,7 @@ public class GamesFragment extends Fragment {
                         mEditor.putInt(username, punti).commit();
                     }
                 });
-                builder.setMessage("Grazie per aver giocato! Sono stati aggiunti 10 punti al tuo account" + username);
+                builder.setMessage("Grazie per aver giocato! Sono stati aggiunti 10 punti al tuo account" );
                 builder.show();
             }
         });
@@ -115,7 +115,7 @@ public class GamesFragment extends Fragment {
                         mEditor.putInt(username, punti).commit();
                     }
                 });
-                builder.setMessage("Grazie per aver giocato! Sono stati aggiunti 20 punti al tuo account" + username);
+                builder.setMessage("Grazie per aver giocato! Sono stati aggiunti 20 punti al tuo account" );
                 builder.show();
             }
         });
@@ -144,7 +144,7 @@ public class GamesFragment extends Fragment {
                         mEditor.putInt(username, punti).commit();
                     }
                 });
-                builder.setMessage("Grazie per aver giocato! Sono stati aggiunti 60 punti al tuo account" + username);
+                builder.setMessage("Grazie per aver giocato! Sono stati aggiunti 60 punti al tuo account");
                 builder.show();
             }
         });
