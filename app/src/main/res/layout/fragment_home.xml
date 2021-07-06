@@ -73,8 +73,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:background="@color/white"
+                android:id="@+id/notizia1"
                 android:orientation="vertical">
 
                 <ImageView
@@ -97,7 +97,59 @@
 
             </LinearLayout>
 
-            <!-- Da farne altre -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/notizia2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="231dp"
+                    android:src="@drawable/notizia2"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSUMI ALIMENTARI E DEFORESTAZIONE NEL RAPPORTO DEL WWF"
+                    android:textSize="50px"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10px"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="“Quanta foresta avete mangiato oggi?”: questo il provocatorio titolo di un rapporto del WWF pubblicato nel mese di novembre 2020 che descrive ed evidenzia il forte legame tra i consumi, alimentari ma non soltanto, e il fenomeno della deforestazione. Secondo quanto riporta l’importante organizzazione ambientalista internazionale, ben l’80% della superficie forestale che abbiamo perso dipende proprio da abitudini non sostenibili."></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/notizia3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="231dp"
+                    android:src="@drawable/notizia3"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quanta foresta hai mangiato, usato o indossato oggi?"
+                    android:textSize="50px"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10px"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C’è tanta, troppa natura sacrificata in molti prodotti di largo consumo, alcuni dei quali tipicamente italiani, come il caffè: l’80% della deforestazione mondiale è dovuta alla necessità di fare posto ai pascoli per la produzione di carne, alle piantagioni di soia e olio di palma richiesti dai Paesi occidentali che consumano e sprecano sempre di più. I consumi dell’Europa sono responsabili del 10% della deforestazione globale, che avviene prevalentemente al di fuori dei confini dell’UE, e il nostro Paese ha un’alta responsabilità visto che siamo un tradizionale importatore di materie prime provenienti dalle foreste: non solo legname, ma anche carni, soia, olio di palma, caffè, cacao, cuoio, e altro ancora, tutti prodotti ad alto ‘contenuto’ di deforestazione."></TextView>
+
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

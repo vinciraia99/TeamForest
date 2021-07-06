@@ -1,52 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.games.GamesFragment"
+    android:background="@color/backgroudapp"
     android:orientation="vertical"
-    android:background="@color/backgroudapp">
+    tools:context=".ui.games.GamesFragment">
 
     <TextView
+        android:id="@+id/testo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="In questa sezione puoi giocare ad alcuni mini-giochi contribuendo alla raccolta punti che potrai utilizzare per donare alberi"
-        android:textSize="20dp"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:text="In questa sezione puoi giocare ad alcuni mini-giochi contribuendo alla raccolta punti che potrai utilizzare per donare alberi"
+        android:textSize="20dp" />
 
     <RelativeLayout
+        android:id="@+id/giochi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textAlberi"
-        android:background="@color/green_200"
-        >
+        android:layout_below="@id/testo"
+        android:background="@color/green_200">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Giochi disponibili"
             android:orientation="vertical"
-            android:textSize="25dp"
-            >
+            android:text="Giochi disponibili"
+            android:textSize="25dp">
 
         </TextView>
     </RelativeLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/gridViewGames"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:columnWidth="0dp"
-        android:gravity="center"
-        android:layout_margin="10dp"
-        android:horizontalSpacing="10dp"
-        android:numColumns="2"
-        android:stretchMode="columnWidth"
-        android:verticalSpacing="10dp" />
+        android:layout_below="@id/giochi"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/gioco1"></ImageView>
 
 
-</LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Snake"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Snake è un gioco presente in molti telefonini, in particolare..."></TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:drawableLeft="@drawable/gameblack"
+                    android:id="@+id/bt1"
+                    android:text="Gioca!"></Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/gioco2"></ImageView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tetris"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tetris è un gioco di logica e ragionamento inventato da..."></TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:drawableLeft="@drawable/gameblack"
+                    android:id="@+id/bt2"
+                    android:text="Gioca!"></Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/gioco3"></ImageView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2048"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2048 è un videogioco libero a giocatore  singolo il cui obbiettivo è quello di far scorrere le piastrelle..."></TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:drawableLeft="@drawable/gameblack"
+                    android:id="@+id/bt3"
+                    android:text="Gioca!"></Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/gioco4"></ImageView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Candy crush saga"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Candy Crush saga è un videogioco per smartphone e Facebook. Sviluppato dalla King..."></TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:drawableLeft="@drawable/gameblack"
+                    android:id="@+id/bt4"
+                    android:text="Gioca!"></Button>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
