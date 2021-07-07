@@ -33,22 +33,24 @@ public class DonationMoneyTwo extends AppCompatActivity {
         btnConfirmPaymentMoney.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                androidx.appcompat.app.AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());;
+                AlertDialog.Builder builder = new AlertDialog.Builder(DonationMoneyTwo.this);;
                 builder.setTitle("AVVISO");
                 builder.setMessage("Sei sicuro di voler procedere al pagamento?");
                 builder.setPositiveButton("SI", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        androidx.appcompat.app.AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());;
-                        builder.setTitle("CONGRATULAZIONI");
-                        builder.setMessage("Hai completato il pagamento con successo!");
-                        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        AlertDialog.Builder builder2 = new AlertDialog.Builder(DonationMoneyTwo.this);;
+                        builder2.setTitle("CONGRATULAZIONI");
+                        builder2.setCancelable(false);
+                        builder2.setMessage("Hai completato il pagamento con successo!");
+                        builder2.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                                 startActivity(i);
                             }
                         });
+                        builder2.show();
                     }
                 });
                 builder.setNegativeButton("No", new DialogInterface.OnClickListener() {

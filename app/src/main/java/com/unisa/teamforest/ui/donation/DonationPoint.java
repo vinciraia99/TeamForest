@@ -31,9 +31,9 @@ public class DonationPoint extends AppCompatActivity {
         btnConfirmPaymentPoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(root.getContext());
+                AlertDialog.Builder builder = new AlertDialog.Builder(DonationPoint.this);
                 builder.setCancelable(false);
-                builder.setTitle("CONFRATULAZIONI");
+                builder.setTitle("CONGRATULAZIONI");
                 builder.setMessage("Hai completato il pagamento con successo!");
                 builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
