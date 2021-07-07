@@ -16,7 +16,7 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="3dp"
         android:gravity="center"
-        android:text="Questa sezione contiene dei video che potrai visualizzare per ottenere punti da donare. Clicca sul bottone al centro del video per iniziare la visualizzazione."
+        android:text="Questa sezione contiene dei video che potrai visualizzare. Clicca sul bottone al centro del video per iniziare la visualizzazione. Condividi il video per ottenere punti."
         android:textSize="17dp" />
 
 
