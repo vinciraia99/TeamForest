@@ -55,7 +55,7 @@
                     android:layout_height="50dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Quanl è la somma che vuoi donare?"
+                    android:text="Qual è la somma che vuoi donare?"
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
