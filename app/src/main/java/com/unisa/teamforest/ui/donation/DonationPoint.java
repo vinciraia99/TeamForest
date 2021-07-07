@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.unisa.teamforest.MainActivity;
 import com.unisa.teamforest.R;
@@ -46,26 +47,32 @@ public class DonationPoint extends AppCompatActivity {
         btnConfirmPaymentPoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(DonationPoint.this);
-                builder.setCancelable(false);
-                builder.setTitle("CONGRATULAZIONI");
-                builder.setMessage("Hai completato la donazione con successo!");
-                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        EditText puntiDaDonare = findViewById(R.id.puntiDaDonare);
-                        int puntiDonati= Integer.parseInt(puntiDaDonare.getText().toString());
-                        punti=punti-puntiDonati;
-                        mEditor.putInt(username, punti).commit();
-                        alberi= alberi +(puntiDonati/50);
-                        mEditor.putInt(username + "1",alberi).commit();
-                        TextView puntiView = (TextView) findViewById(R.id.puntiDispDonazione);
-                        puntiView.setText("Punti disponibili: " + punti);
-                        Intent i = new Intent(getApplicationContext(), MainActivity.class);
-                        startActivity(i);
-                    }
-                });
-                builder.show();
+                EditText puntiDaDonare = findViewById(R.id.puntiDaDonare);
+                if (puntiDaDonare.getText().toString().isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Inserisci i punti da donare", Toast.LENGTH_SHORT).show();
+                } else {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(DonationPoint.this);
+                    builder.setTitle("CONGRATULAZIONI");
+                    builder.setMessage("Hai completato la donazione con successo!");
+                    builder.setCancelable(false);
+                    builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            int puntiDonati = Integer.parseInt(puntiDaDonare.getText().toString());
+                            punti = punti - puntiDonati;
+                            mEditor.putInt(username, punti).commit();
+                            alberi = alberi + (puntiDonati / 50);
+                            mEditor.putInt(username + "1", alberi).commit();
+                            TextView puntiView = (TextView) findViewById(R.id.puntiDispDonazione);
+                            puntiView.setText("Punti disponibili: " + punti);
+                            Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                            startActivity(i);
+
+                        }
+                    });
+                    builder.show();
+                }
             }
         });
     }
