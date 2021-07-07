@@ -36,6 +36,7 @@
                     android:layout_height="50dp"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:id="@+id/puntiDispDonazione"
                     android:text="Punti disponibili: 30"
                     android:textSize="30dp"
                     android:textStyle="bold" />
@@ -64,7 +65,8 @@
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:inputType="number"
-                    android:text="5"
+                    android:hint="5"
+                    android:id="@+id/puntiDaDonare"
                     android:textSize="35dp"/>
 
 
@@ -82,7 +84,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Donando questi punti continuirai a salvare 5 alberi"
+                    android:text="Donando 50 punti aiuterai a piantare 1 albero!"
                     android:textSize="20dp" />
 
                 <Button

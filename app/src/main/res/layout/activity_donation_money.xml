@@ -38,6 +38,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Punti disponibili: 30"
+                    android:id="@+id/puntiDisp2"
                     android:textSize="30dp"
                     android:textStyle="bold" />
 
@@ -70,7 +71,8 @@
                         android:layout_height="60dp"
                         android:gravity="center"
                         android:inputType="numberDecimal"
-                        android:text="5"
+                        android:hint="5"
+                        android:id="@+id/euroDonati"
                         android:textSize="35dp"/>
 
                     <TextView
@@ -88,7 +90,7 @@
                         android:layout_height="60dp"
                         android:gravity="center"
                         android:inputType="numberDecimal"
-                        android:text="00"
+                        android:hint="00"
                         android:textSize="35dp"/>
 
                 </LinearLayout>
@@ -108,7 +110,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Donando questi punti continuirai a salvare 5 alberi"
+                    android:text="Ogni 3 euro donati pianterai un albero!"
                     android:textSize="20dp" />
 
                 <Button
