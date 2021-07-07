@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroudapp">
+    android:background="@color/backgroudapp"
+    android:orientation="vertical"
+    android:gravity="center">
 
     <TextView
         android:layout_width="wrap_content"
@@ -11,9 +13,7 @@
         android:text="Benvenuto/a"
         android:textSize="40dp"
         android:id="@+id/testoinziale"
-        android:paddingBottom="120px"
-        android:paddingTop="180dp"
-        ></TextView>
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,9 +22,7 @@
         android:id="@+id/testologin"
         android:layout_centerHorizontal="true"
         android:text="Inserisci i dati con cui registrarti"
-        android:textSize="20dp"
-        android:paddingBottom="50px"
-        ></TextView>
+        android:textSize="20dp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -32,20 +30,20 @@
         android:layout_centerHorizontal="true"
         android:orientation="horizontal"
         android:layout_below="@id/testologin"
-        android:id="@+id/testonome">
+        android:id="@+id/testonome"
+        android:layout_marginTop="20dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nome">
-        </TextView>
+            android:text="Nome"/>
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Inserisci il tuo nome"
-            android:id="@+id/nome">
-        </EditText>
+            android:id="@+id/nome"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -59,15 +57,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cognome">
-        </TextView>
+            android:text="Cognome"/>
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Inserisci il tuo cognome"
-            android:id="@+id/cognome">
-        </EditText>
+            android:id="@+id/cognome"/>
+
     </LinearLayout>
 
    <LinearLayout
@@ -81,15 +78,14 @@
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="Username">
-       </TextView>
+           android:text="Username"/>
 
        <EditText
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:hint="Inserisci il tuo username"
-           android:id="@+id/username">
-       </EditText>
+           android:id="@+id/username"/>
+
    </LinearLayout>
 
     <LinearLayout
@@ -103,15 +99,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="E-Mail">
-        </TextView>
+            android:text="E-Mail"/>
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Inserisci la tua email"
-            android:id="@+id/email">
-        </EditText>
+            android:id="@+id/email"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -125,16 +120,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password">
-        </TextView>
+            android:text="Password"/>
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Inserisci la tua password"
             android:inputType="textPassword"
-            android:id="@+id/password">
-        </EditText>
+            android:id="@+id/password"/>
+
     </LinearLayout>
 
     <Button
@@ -144,9 +138,7 @@
         android:layout_centerHorizontal="true"
         android:text="Registrati"
         android:backgroundTint="@color/green_200"
-        android:onClick="registrati">
-    </Button>
+        android:onClick="registrati"
+        android:layout_marginTop="20dp"/>
 
-
-
-</RelativeLayout>
+</LinearLayout>
