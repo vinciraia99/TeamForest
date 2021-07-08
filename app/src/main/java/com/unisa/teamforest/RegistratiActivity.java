@@ -37,7 +37,7 @@ public class RegistratiActivity extends AppCompatActivity {
         EditText nome = (EditText)findViewById(R.id.nome);
         String n = nome.getText().toString();
         EditText cognome = (EditText)findViewById(R.id.cognome);
-        String c = nome.getText().toString();
+        String c = cognome.getText().toString();
 
         if(u.isEmpty() || p.isEmpty() || e.isEmpty() || n.isEmpty() || c.isEmpty()){
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
