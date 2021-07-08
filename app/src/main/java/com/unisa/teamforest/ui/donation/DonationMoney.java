@@ -50,7 +50,6 @@ public class DonationMoney extends AppCompatActivity {
             public void onClick(View v) {
                 if(puntiDaDonare.getText().toString().isEmpty()){
                     Toast.makeText(getApplicationContext(),"Inserisci l'importo da donare",Toast.LENGTH_SHORT).show();
-
                 }
                 else {
                     Intent i = new Intent(getApplicationContext(), DonationMoneyTwo.class);

@@ -22,7 +22,6 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 import com.unisa.teamforest.R;
-import com.unisa.teamforest.databinding.FragmentDashboardBinding;
 import com.unisa.teamforest.databinding.FragmentVideoBinding;
 
 import static android.content.Context.MODE_PRIVATE;

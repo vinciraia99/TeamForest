@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 import com.unisa.teamforest.MainActivity;
 import com.unisa.teamforest.R;
-import com.unisa.teamforest.ui.dashboard.DashboardFragment;
 
 public class DonationMoneyTwo extends AppCompatActivity {
 

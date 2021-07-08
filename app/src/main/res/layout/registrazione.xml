@@ -25,7 +25,8 @@
         android:textSize="20dp"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:orientation="horizontal"
@@ -34,20 +35,26 @@
         android:layout_marginTop="20dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
             android:text="Nome"/>
 
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:hint="Inserisci il tuo nome"
-            android:id="@+id/nome"/>
+            android:layout_weight="0.1"
+            android:id="@+id/nome"
+            android:singleLine="true"
+            android:maxLines="1"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:orientation="horizontal"
@@ -55,20 +62,26 @@
         android:id="@+id/testocognome">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
             android:text="Cognome"/>
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Inserisci il tuo cognome"
-            android:id="@+id/cognome"/>
+            android:layout_weight="0.1"
+            android:id="@+id/cognome"
+            android:singleLine="true"
+            android:maxLines="1"/>
 
     </LinearLayout>
 
    <LinearLayout
-       android:layout_width="wrap_content"
+       android:layout_width="match_parent"
+       android:layout_marginHorizontal="20dp"
        android:layout_height="wrap_content"
        android:layout_centerHorizontal="true"
        android:orientation="horizontal"
@@ -76,20 +89,26 @@
        android:id="@+id/testousername">
 
        <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="0.3"
+           android:gravity="center_vertical"
            android:text="Username"/>
 
        <EditText
-           android:layout_width="wrap_content"
+           android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:hint="Inserisci il tuo username"
-           android:id="@+id/username"/>
+           android:layout_weight="0.1"
+           android:id="@+id/username"
+           android:singleLine="true"
+           android:maxLines="1"/>
 
    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:orientation="horizontal"
@@ -97,21 +116,27 @@
         android:layout_below="@id/testopassword">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
             android:text="E-Mail"/>
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Inserisci la tua email"
+            android:layout_weight="0.1"
             android:inputType="textEmailAddress"
-            android:id="@+id/email"/>
+            android:id="@+id/email"
+            android:singleLine="true"
+            android:maxLines="1"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:orientation="horizontal"
@@ -119,16 +144,21 @@
         android:layout_below="@id/testousername">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
             android:text="Password"/>
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Inserisci la tua password"
+            android:layout_weight="0.1"
             android:inputType="textPassword"
-            android:id="@+id/password"/>
+            android:id="@+id/password"
+            android:singleLine="true"
+            android:maxLines="1"/>
 
     </LinearLayout>
 
