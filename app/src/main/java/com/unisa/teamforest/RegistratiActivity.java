@@ -21,7 +21,6 @@ public class RegistratiActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("");
         setContentView(R.layout.registrazione);
         super.onCreate(savedInstanceState);
-        //personas1 = new Utente("Davide","Agazzi","davide","12345","davideagazzi@gmail.com");
 
 
     }
