@@ -156,7 +156,6 @@
                     android:layout_marginTop="10dp"
                     android:text="Esci"
                     android:id="@+id/btn_esci"
-                    android:onClick="onClickEsci"
                     android:textSize="13dp" />
 
             </LinearLayout>

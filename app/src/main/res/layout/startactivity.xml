@@ -46,7 +46,7 @@
         android:layout_below="@id/buttonlogin"
         android:id="@+id/testoregistrazione"
         android:layout_centerHorizontal="true"
-        android:text="Non hai un account?\nRegistrati qui"
+        android:text="Non hai un account? Registrati qui"
         android:textAlignment="center"
         android:textSize="20dp"
         android:layout_marginTop="20dp"
